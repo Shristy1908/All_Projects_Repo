@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.carousel-item{
+    width: 100%;
+    height: 93vh;
+}
+nav{
+    background-color: black;
+   
+}
+#figure{
+    margin-right: 20px;
+}
+.services img{
+    width: 100%;
+    height: 100%;
+}
+.gallary{
+    width: 80%;
+    height: 80%;
+}
+.offer-style{
+    background-color: rgb(221, 216, 212);
+}
+.contact{
+    background-color:rgb(221, 216, 212);
+}
+.footer{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwlPRkaZChOeyn3CLvJ_t9IcsG6u6GUWt2Sw&usqp=CAU);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+span{
+    color: red;
+}
