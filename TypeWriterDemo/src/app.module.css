@@ -1,0 +1,13 @@
+.btn{
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    padding: 10px 25px;
+    border-radius: 12px;
+}
+.wrapper{
+    width: 100%;
+   
+    display: grid;
+    place-items: center;
+}
