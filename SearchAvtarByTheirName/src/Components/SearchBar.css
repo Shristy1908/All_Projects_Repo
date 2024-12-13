@@ -1,0 +1,31 @@
+.input-wrapper{
+    background-color: white;
+    width: 40rem;
+    margin: auto;
+    height: 3rem;
+    border-radius: 10px;
+}
+input{
+    border: none;
+    width: 35rem;
+    height: 2.8rem;
+    font-size: 1.2rem;
+    padding: auto 0px;
+    margin-left: 7px;
+}
+input:focus{
+    outline: none;
+}
+.search-icon{
+    color: rgb(28, 28, 138);
+    font-size: 20px;
+}
+
+@media only screen and (max-width:600px) {
+       .input-wrapper {  
+            width: 20rem;
+        }
+        input{
+            width: 15rem;
+        }
+}
