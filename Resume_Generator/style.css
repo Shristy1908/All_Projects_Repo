@@ -1,0 +1,23 @@
+
+.myimg{
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 200px;
+    height: 50px;
+}
+#imgT{
+    height: 200px;
+}
+
+a{
+    color: black;
+}
+.background{
+    background-color: rgb(169, 194, 194);
+}
+#bg{
+    background-color: rgb(169, 194, 194);
+}
+#cv-template{
+    display: none;
+}
