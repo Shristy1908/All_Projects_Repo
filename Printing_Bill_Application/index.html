@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script> 
+    <td><title>Printing Bill Application</title></td>
+</head>
+<body>
+    <div >
+        
+        <font size="5">
+         
+            <table width="1000" border="2" cellpadding="4" cellspacing="4" align="center" id="orderForm">    
+                <tr >
+                   <td colspan="2"><h1>Printing Bill Application</h1></td> 
+                </tr>
+            
+                <tr>
+                    <td colspan="2" align="center" style="background-size: cover;">
+                        <img src="https://seeklogo.com/images/R/restaurant-logo-91DC5CD0D5-seeklogo.com.png" width="30%" height="40%">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center" style="color: white; background-color: black;">
+                        Customer Details
+                    </td>
+                </tr>
+                <tr>
+                    <td id="bold">Customer Name</td>
+                    <td><input type="text" id="textname" required width="100%" placeholder="Enter Name......."></td>
+                </tr>
+                <tr>
+                    <td id="bold">Customer Mobile</td>
+                    <td><input type="text" id="textMobile" required placeholder="Enter Mobile No......"></td>
+                </tr>
+                <tr>
+                    <td id="bold">Customer Address</td>
+                    <td><input type="text" id="textAddress" required placeholder="Enter Address......."></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center" height="30%" style="color: white; background-color: black;">Select  A  Meal</td>
+                </tr>
+                <tr align="center">
+                    <td>
+                        <img src="https://media.istockphoto.com/photos/hamburger-with-cheese-and-french-fries-picture-id1188412964?k=20&m=1188412964&s=612x612&w=0&h=Ow-uMeygg90_1sxoCz-vh60SQDssmjP06uGXcZ2MzPY=" width="90%">
+                        <br>
+                        <input type="checkbox" name="meal" id="optBurger" value=", Burger"> Burger<br>&nbsp;&nbsp;&nbsp;Price: Rs.50/-     
+                    </td>
+                    <td>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2d28i8SOeyKVq7HfUJJW0XlGDUPMLOfcnXw&usqp=CAU" width="70%">
+                        <br>
+                        <input type="checkbox" name="meal" id="optPizza" value=", Pizza" > Pizza<br>&nbsp;&nbsp;&nbsp;Price: Rs.190/-
+                    </td>
+                </tr>
+                <tr align="center">
+                    <td>
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-s/17/1a/1d/87/kati-rolls-of-kolkata.jpg" width="80%">
+                        <br>
+                        <input type="checkbox" name="meal" id="optEgg_roll" value=", Egg roll"> Egg Roll<br>&nbsp;&nbsp;&nbsp;Price: Rs.100/-
+                    </td>
+                    <td>
+                        <img src="https://www.pngkey.com/png/detail/408-4086513_fried-spring-roll-frying.png" width="70%">
+                        <br>
+                        <input type="checkbox" name="meal" id="optSpring_roll" value=", Spring roll"> Spring Roll<br>&nbsp;&nbsp;&nbsp;Price: Rs.80/-
+                    </td>
+                </tr>
+                <tr align="center">
+                    <td>
+                        <img src="https://lh3.googleusercontent.com/RsWvmlBJGWSaMgO4-AOkZSBYOfn3goeG0_UUVkG65e1FFM9nBK-AuWpcR_cMeUOglX0Mai8aNMtMxRKS37uk-vHXk2rBgUeBd70ebzU=w512" width="90%">
+                        <br>
+                        <input type="checkbox" name="meal" id="optDhosha" value=", Dhosha"> Dhosha<br>&nbsp;&nbsp;&nbsp;Price: Rs.70/-  
+                    </td>
+                    <td>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5gx40_FRTlQK4xTg72-L_-MLb8ruShsVQVg&usqp=CAU" width="65%">
+                        <br>
+                        <input type="checkbox" name="meal" id="optChowmin" value=", Chowmin">Chowmin<br>&nbsp;&nbsp;&nbsp;Price: Rs.120/-  
+                    </td>
+                </tr>
+                <tr align="center" id="btn_row">
+                    <td colspan="2"><br><input type="button" value="Place Order" id="button" onclick="placeOrder()"></td><br>
+                    
+                </tr>
+            </table>
+
+            <br>
+            <span id="order summary" style=" display:none; align-items: center;">
+                <h1>Order summary</h1><hr><br>
+                <h3>Restaurant Slogan here</h3>
+                <p>Vijay Nagar, Near by C21 mail, Hazaribagh, Jharkhand</p>
+                <br><br><br>
+                <table border="2" cellpadding="10" cellspacing="4" width="650" >
+                    <tr>
+                        <td id="tbl">Customer Name</td>
+                        <td id="lblName"></td>
+                    </tr>
+                    <tr>
+                        <td id="tbl">Customer Mobile</td>
+                        <td id="lblMobile"></td>
+                    </tr>
+                    <tr>
+                        <td id="tbl">Customer Address</td>
+                        <td id="lblAddress"></td>
+                    </tr>
+                    <tr>
+                        <td id="tbl">Meal</td>
+                        <td id="lblMeal"></td>
+                    </tr>
+                    <tr>
+                       <td id="tbl">Total Bill Amount</td>
+                       <td id="lblAmount"></td>
+                    </tr>
+               </table>
+               <br>
+               <input type="button" value="Print Bill" id="printbtn" onclick="window.print()">
+            </span>
+        </font>
+    </div>
+</body>
+</html>
