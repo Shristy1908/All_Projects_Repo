@@ -1,0 +1,10 @@
+   nav {
+   background-color: rgba(2, 53, 172, 0.83);
+   }
+   .navbar-brand {
+   font-weight: bolder;
+   font-size: 2em !important;
+   }
+   .btn.btn-outline-light.fw-bold {
+   background-color: rgb(235, 219, 219);
+   }
